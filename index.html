@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
+    <script src="./js/foo.js"></script>
   </head>
 
   <body>
@@ -34,11 +34,16 @@
       <h1>近距离和长者交流</h1>
       <p>Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
-
-
+      <form id="say" action="#" target="_blank" onsubmit="return say()">
+        <p>
+          随便说几句吧: <input type="text" id="yourQuestion" name="yourQuestion">
+        </p>
+    
+        <p>
+          <button type="submit">提交</button> 
+        </p>
+      </form>
     </div>
-
-    <script>alert('jQuery版本：' + $.fn.jquery);</script>
 
   </body>
 </html>
