@@ -68,11 +68,11 @@
 
 		$scope.timeTick = function() {
     		
-    		var tickInterval = 1000 //ms
+    		var tickInterval = 1000; //ms
 
     		var tick = function() {
         		$scope.clock = Date.now() // get the current time
-        		$timeout(tick, $scope.tickInterval); // reset the timer
+        		$timeout(tick, tickInterval); // reset the timer
     		}
 
     		// Start the timer
