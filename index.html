@@ -21,7 +21,6 @@
         <!-- <h1>Excited!</h1> -->
 
         <form class="form-group" ng-submit="submit()">
-          <div>
           <p>
             随便说几句吧: 
           </p>
@@ -38,12 +37,13 @@
         <div ng-show="eldersResponse">
           <h2> 长者： {{eldersResponse}} </h2>
         </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3 col-xs-12">
           <a type="button" class="btn btn-primary" ng-click="getQuote()">蛤蛤语录欣赏</a>
         
-          <div class="well">        
+          <div class="well" ng-show="theQuote">        
           <span style="font-size:20px;">
             {{theQuote.quote}}
           </span>
