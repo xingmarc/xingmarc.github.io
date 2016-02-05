@@ -14,7 +14,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 col-xs-12">
+        <div class="col-sm-3 col-sm-offset-6 col-xs-12">
 
 
         <h1>近距离和长者交流</h1>
@@ -25,17 +25,24 @@
           <p>
             随便说几句吧: 
           </p>
+
             <input class="form-control" 
             type="text" id="yourQuestion" 
             ng-model="yourQuestion" 
-            placeholder="Say something to Zhangzhe">
+            placeholder="Say something to Zhangzhefile">
         
             <!-- <button class="btn btn-primary" ng-click="submit()">提交</button>  -->
-          </p>
+        
         </form>
 
         <div ng-show="eldersResponse">
           <h2> 长者： {{eldersResponse}} </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-6 col-xs-12">
+        <a type="button" class="btn btn-primary" ng-click="getQuote()">蛤蛤语录</a>
+          {{theQuote}}
         </div>
       </div>
     </div>
