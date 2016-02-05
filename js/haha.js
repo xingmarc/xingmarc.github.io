@@ -8,7 +8,8 @@
 
 		$scope.yourQuestion = "";
 		$scope.eldersResponse = "";
-		$scope.eldersQuotes = {};
+		$scope.eldersQuotes = null;
+		$scope.theQuote = "";
 
 
 		var parseAndSay = function(question){
@@ -50,8 +51,19 @@
 
 		}
 		$.getJSON("/file/eldersQuotes.json", function(json) {
-    		console.log(json); // this will show the info it in firebug console
+    		//console.log(json); // this will show the info it in firebug console
+    		$scope.eldersQuotes = json;
 		});
+
+		$scope.getQuote = function(){
+			if (!$scope.eldersQuotes){
+				return;
+			}
+			var len = $scope.eldersQuotes.quotes.length;
+			var r = Math.floor(Math.random()*(20));
+
+			$scope.theQuote = $scope.eldersQuotes.quotes[r];
+		}
 
 
 
