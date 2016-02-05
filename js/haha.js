@@ -65,6 +65,17 @@
 			$scope.theQuote = $scope.eldersQuotes.quotes[r];
 		}
 
+		$scope.currentTime =function(){
+			var t = new Date();
+			console.log(t);
+
+			var tt = setTimeout($scope.currentTime, 500);
+		}
+
+		$scope.addOneSecond = function(){
+
+		}
+
 
 
 
