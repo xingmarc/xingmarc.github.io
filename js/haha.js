@@ -66,19 +66,19 @@
 			$scope.theQuote = $scope.eldersQuotes.quotes[r];
 		};
 
-		$scope.timeTick = function() {
+		// $scope.timeTick = function() {
     		
-    		var tickInterval = 1000; //ms
+  //   		var tickInterval = 1000; //ms
 
-    		var tick = function() {
-        		$scope.clock = new Date() // get the current time
-        		$timeout(tick, tickInterval); // reset the timer
-    		}
+  //   		var tick = function() {
+  //       		$scope.clock = new Date() // get the current time
+  //       		$timeout(tick, tickInterval); // reset the timer
+  //   		}
 
-    		// Start the timer
-    		$timeout(tick, tickInterval);
-		}
-		$scope.timeTick();
+  //   		// Start the timer
+  //   		$timeout(tick, tickInterval);
+		// }
+		// $scope.timeTick();
 
 
 	}
