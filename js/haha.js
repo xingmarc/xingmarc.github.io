@@ -71,6 +71,8 @@
 
 			var tt = setTimeout($scope.currentTime, 500);
 		}
+		$scope.currentTime();
+
 
 		$scope.addOneSecond = function(){
 
