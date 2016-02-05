@@ -4,12 +4,13 @@
 	angular.module('Haha')
 	.controller('hahaHomepageCtrl',hahaHomepageCtrl);
 
-	function hahaHomepageCtrl($scope){
+	function hahaHomepageCtrl($scope,$timeout){
 
 		$scope.yourQuestion = "";
 		$scope.eldersResponse = "";
 		$scope.eldersQuotes = null;
 		$scope.theQuote = "";
+		$scope.clock = "";
 
 
 		var parseAndSay = function(question){
@@ -63,23 +64,21 @@
 			var r = Math.floor(Math.random()*(20));
 
 			$scope.theQuote = $scope.eldersQuotes.quotes[r];
+		};
+
+		$scope.timeTick = function() {
+    		
+    		var tickInterval = 1000 //ms
+
+    		var tick = function() {
+        		$scope.clock = Date.now() // get the current time
+        		$timeout(tick, $scope.tickInterval); // reset the timer
+    		}
+
+    		// Start the timer
+    		$timeout(tick, tickInterval);
 		}
-
-		$scope.currentTime =function(){
-			var t = new Date();
-			console.log(t);
-
-			var tt = setTimeout($scope.currentTime, 500);
-		}
-		$scope.currentTime();
-
-
-		$scope.addOneSecond = function(){
-
-		}
-
-
-
+		$scope.timeTick();
 
 
 	}
