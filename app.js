@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('HahaX',[])
-.config(function($locationProvider,$stateProvider, $urlRouterProvider,localStorageServiceProvider) {
+angular.module('HahaX',['ui.router'])
+.config(function($locationProvider,$stateProvider,$urlRouterProvider,localStorageServiceProvider) {
 
 	$stateProvider
 	.state('index',{
