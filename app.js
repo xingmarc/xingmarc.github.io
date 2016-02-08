@@ -2,7 +2,7 @@
 
 angular.module('HahaX',['ui.router'])
 .config(function($stateProvider,$urlRouterProvider) {
-
+	$urlRouterProvider.otherwise("")
 	$stateProvider
 	.state('index',{
 	  	url: '',
