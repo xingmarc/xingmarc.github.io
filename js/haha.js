@@ -1,7 +1,7 @@
 'use strict';
 
 (function(){
-	angular.module('Haha')
+	angular.module('HahaX')
 	.controller('hahaHomepageCtrl',hahaHomepageCtrl);
 
 	function hahaHomepageCtrl($scope,$timeout){

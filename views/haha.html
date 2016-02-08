@@ -1,0 +1,64 @@
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+
+
+        <h1>近距离和长者交流</h1>
+        <!-- <h1>Excited!</h1> -->
+
+        <form class="form-group" ng-submit="submit()">
+          <p>
+            随便说几句吧: 
+          </p>
+          <p style="font-size: 10px; color:#939393">
+            可以问他支不支持董先生
+          </p>
+
+            <input class="form-control" 
+            type="text" id="yourQuestion" 
+            ng-model="yourQuestion" 
+            placeholder="Say something to Zhangzhefile">
+        
+            <!-- <button class="btn btn-primary" ng-click="submit()">提交</button>  -->
+        
+        </form>
+
+        <div ng-show="eldersResponse">
+          <span style="font-size:20px;"> 长者： {{eldersResponse}} </span>
+        </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+          <a type="button" class="btn btn-primary" ng-click="getQuote()">长者语录欣赏</a>
+        
+          <br />
+
+          <div class="well" ng-show="theQuote">        
+          <span style="font-size:20px;">
+            {{theQuote.quote}}
+          </span>
+          <br />
+          <span style="font-size:14px;">
+            {{theQuote.time}}
+          </span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- <footer>
+        <div class="container">
+          {{clock}}
+          <br />
+          1926年8月17日 ———— {{clock.year}}年{{clock.month}}月{{clock.day}}日{{clock.hour}}时{{clock.minute}}分{{clock.second}}秒
+          
+        </div>
+      </footer> -->
+
+    </div>
