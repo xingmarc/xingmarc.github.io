@@ -38,7 +38,6 @@ angular.module('HahaX',['ui.router'])
 	  	url: "/haha",
 	    templateUrl: "views/haha.html",
 	    controller: 'hahaHomepageCtrl'
-	}
 	})
 
 });
