@@ -21,7 +21,7 @@ angular.module('HahaX',['ui.router'])
 	  	views: {
 	    	'container@': {
 	      		templateUrl: 'index.html',
-	      		controller: 'headerCtrl'
+	      		controller: 'landingCtrl'
 	    	}
 	  }
 	})
