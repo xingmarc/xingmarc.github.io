@@ -36,12 +36,9 @@ angular.module('HahaX',['ui.router'])
  //    })
 	.state('haha', {
 	  	url: "/haha",
-	  	views: {
-	    	'container@': {
-	      		templateUrl: "views/haha.html",
-	      		controller: 'hahaHomepageCtrl'
-	  		}
-	  	}
+	    templateUrl: "views/haha.html",
+	    controller: 'hahaHomepageCtrl'
+	}
 	})
 
 });
