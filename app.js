@@ -2,7 +2,7 @@
 
 angular.module('HahaX',['ui.router'])
 .config(function($stateProvider,$urlRouterProvider) {
-	
+
 	$urlRouterProvider.otherwise("/");
 	$stateProvider
 	.state('index',{
@@ -16,13 +16,13 @@ angular.module('HahaX',['ui.router'])
 	  }
 	})
 	.state('index.landing', {
-      url: "/",
-      views: {
-        'container@': {
-          templateUrl: "views/landing.html",
-          controller: 'landingCtrl',
-        }
-      }
+      	url: "/",
+      	views: {
+        	'container@': {
+          		templateUrl: "views/landing.html",
+          		controller: 'landingCtrl',
+        	}
+      	}
     })
 	.state('index.haha', {
 	  	url: "/haha",
