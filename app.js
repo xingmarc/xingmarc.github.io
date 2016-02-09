@@ -5,12 +5,22 @@ angular.module('HahaX',['ui.router'])
 
 	$urlRouterProvider.otherwise("/");
 	$stateProvider
+	// .state('index',{
+	//   	url: '',
+	//  	abstract: true,
+	//   	views: {
+	//     	'header': {
+	//       		templateUrl: 'views/header.html',
+	//       		controller: 'headerCtrl'
+	//     	}
+	//   }
+	// })
+
 	.state('index',{
 	  	url: '',
-	 	abstract: true,
 	  	views: {
-	    	'header': {
-	      		templateUrl: 'views/header.html',
+	    	'container@': {
+	      		templateUrl: 'index.html',
 	      		controller: 'headerCtrl'
 	    	}
 	  }
