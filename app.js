@@ -16,25 +16,25 @@ angular.module('HahaX',['ui.router'])
 	//   }
 	// })
 
-	.state('index',{
-	  	url: '',
-	  	views: {
-	    	'container@': {
-	      		templateUrl: 'index.html',
-	      		controller: 'landingCtrl'
-	    	}
-	  }
-	})
-	.state('index.landing', {
-      	url: "/",
-      	views: {
-        	'container@': {
-          		templateUrl: "views/landing.html",
-          		controller: 'landingCtrl',
-        	}
-      	}
-    })
-	.state('index.haha', {
+	// .state('index',{
+	//   	url: '',
+	//   	views: {
+	//     	'container@': {
+	//       		templateUrl: 'index.html',
+	//       		controller: 'landingCtrl'
+	//     	}
+	//   }
+	// })
+	// .state('index.landing', {
+ //      	url: "/",
+ //      	views: {
+ //        	'container@': {
+ //          		templateUrl: "views/landing.html",
+ //          		controller: 'landingCtrl',
+ //        	}
+ //      	}
+ //    })
+	.state('haha', {
 	  	url: "/haha",
 	  	views: {
 	    	'container@': {
