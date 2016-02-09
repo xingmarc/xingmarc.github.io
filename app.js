@@ -8,12 +8,11 @@ angular.module('HahaX',['ui.router'])
 	.state('root', {
     	url: "/home",
     	abstract: true,
-    	template: '<ui-view/>'
+    	template: 'view/home.html',
+    	controller:'homeCtrl'
 	})
 	.state('root.home',{
-		url:'',
-		template:"view/home.html",
-		controller:'homeCtrl'
+		url:'',		
 	})
 	.state('root.haha', {
 	  	url: "/haha",
