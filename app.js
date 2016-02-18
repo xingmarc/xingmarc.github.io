@@ -12,7 +12,7 @@ angular.module('HahaX',['ui.router'])
     	template: '<ui-view/>'
 	})
 	.state('root.home',{
-		url:'/home',
+		url:'',
 		template: 'view/home.html',
     	controller:'homeCtrl'
 	})
