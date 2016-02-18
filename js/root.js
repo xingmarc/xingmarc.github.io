@@ -2,7 +2,7 @@
 
 (function(){
 	angular.module('HahaX')
-	.controller('rootCtrl',hexCtrl);
+	.controller('rootCtrl',rootCtrl);
 
 	function rootCtrl($scope,$timeout){
 
