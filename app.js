@@ -9,12 +9,15 @@ angular.module('HahaX',['ui.router'])
 	.state('root', {
     	url: '/root',
     	abstract: true,
-    	template: 'views/root.html',
-    	controller: 'rootCtrl'
+    	template: '<ui-view/>'
+
+    	/*
+    	template: "views/root.html",
+    	controller: 'rootCtrl'*/
 	})
 	.state('root.home',{
 		url:'/home',
-		template: 'views/home.html',
+		template: "views/home.html",
     	controller:'homeCtrl'
 	})
 	.state('root.haha', {
