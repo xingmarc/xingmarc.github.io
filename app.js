@@ -7,9 +7,10 @@ angular.module('HahaX',['ui.router'])
 	$urlRouterProvider.when('/root','/home/index');
 	$stateProvider
 	.state('root', {
-    	url: '/root',
+    	url: '',
     	abstract: true,
-    	template: '<ui-view/>'
+    	templateUrl: "views/home.html",
+    	controller: "homeCtrl"
 
     	/*
     	template: "views/root.html",
