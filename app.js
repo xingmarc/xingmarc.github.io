@@ -17,7 +17,7 @@ angular.module('HahaX',['ui.router'])
 	})
 	.state('root.home',{
 		url:'',
-		template: "views/home.html",
+		templateUrl: "views/home.html",
     	controller:'homeCtrl'
 	})
 	.state('root.haha', {
