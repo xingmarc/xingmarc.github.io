@@ -4,7 +4,7 @@ angular.module('HahaX',['ui.router'])
 .config(function($stateProvider,$urlRouterProvider) {
 
 	$urlRouterProvider.otherwise("/");
-	//$urlRouterProvider.when('/root','/home/index');
+	$urlRouterProvider.when('/root','/home/index');
 	$stateProvider
 	.state('root', {
     	url: '/root',
@@ -12,7 +12,7 @@ angular.module('HahaX',['ui.router'])
     	template: '<ui-view/>'
 	})
 	.state('root.home',{
-		url:'',
+		url:'/home',
 		template: 'view/home.html',
     	controller:'homeCtrl'
 	})
