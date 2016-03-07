@@ -8,8 +8,8 @@ angular.module('HahaX',['ui.router'])
 	$stateProvider
 	.state('root', {
     	url: '',
-    	abstract: true,
-    	templateUrl: "views/home.html",
+    	//abstract: true,
+    	template: "views/home.html",
     	controller: "homeCtrl"
 
     	/*
