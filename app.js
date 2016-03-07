@@ -9,7 +9,7 @@ angular.module('HahaX',['ui.router'])
 	.state('root', {
     	url: '/root',
     	abstract: true,
-    	templateUrl: 'index.html',
+    	//templateUrl: 'index.html',
     	//controller: 'homeCtrl'
 
     	/*
