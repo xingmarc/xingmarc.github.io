@@ -3,7 +3,7 @@
 angular.module('HahaX',['ui.router'])
 .config(function($stateProvider,$urlRouterProvider) {
 
-	$urlRouterProvider.otherwise("/");
+	//$urlRouterProvider.otherwise("/");
 	//$urlRouterProvider.when('/root','/home/index');
 	$stateProvider
 	.state('root', {
