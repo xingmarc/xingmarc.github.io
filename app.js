@@ -7,9 +7,9 @@ angular.module('HahaX',['ui.router'])
 	//$urlRouterProvider.when('/root','/home/index');
 	$stateProvider
 	.state('root', {
-    	url: '/root',
+    	url: '/home',
     	abstract: true,
-    	//templateUrl: 'index.html',
+    	templateUrl: 'index.html',
     	//controller: 'homeCtrl'
 
     	/*
