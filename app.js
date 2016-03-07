@@ -6,16 +6,16 @@ angular.module('HahaX',['ui.router'])
 	$urlRouterProvider.otherwise("/");
 	$urlRouterProvider.when('/root','/home/index');
 	$stateProvider
-	.state('root', {
-    	url: '',
-    	//abstract: true,
-    	templateUrl: "views/home.html",
-    	controller: "homeCtrl"
+	// .state('root', {
+ //    	url: '',
+ //    	//abstract: true,
+ //    	templateUrl: "views/home.html",
+ //    	controller: "homeCtrl"
 
-    	/*
-    	template: "views/root.html",
-    	controller: 'rootCtrl'*/
-	})
+ //    	/*
+ //    	template: "views/root.html",
+ //    	controller: 'rootCtrl'*/
+	// })
 	.state('root.home',{
 		url:'/home',
 		templateUrl: "views/home.html",
