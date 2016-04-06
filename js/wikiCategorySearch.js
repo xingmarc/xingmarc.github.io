@@ -48,7 +48,7 @@ $.ajax( {
         		gacprefix: $scope.userInput,
         		continue: "",
     		},
-    		headers: { 'Api-User-Agent': 'Example/1.0' },
+    		headers: { 'Api-User-Agent': 'xingmarc.github.io' },
 
 		}).then(function successCallback(response) {
     		// this callback will be called asynchronously
