@@ -63,7 +63,8 @@ $.ajax( {
     			$scope.categories.push(response.data.query.pages[item]);
     		})
 
-
+    		console.log($scope.categories);
+    		
     		$scope.queryDone = true;
 
   		}, function errorCallback(response) {
