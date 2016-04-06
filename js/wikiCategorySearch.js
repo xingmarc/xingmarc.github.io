@@ -9,23 +9,40 @@
 
 
 		$scope.aaa = "yoyo";
-
+		$scope.userInput = "animal";
 
 
 		// var test = wikiAPI.get();
 
 		// console.log(test);
-
+/*
+$.ajax( {
+    url: "https://en.wikipedia.org/w/api.php",
+    dataType:'jsonp',
+    data: { 
+        action: "query", 
+        indexpageids:"",
+        generator:"allcategories",
+        gacprefix:"animals",
+        continue :"", 
+        format: "json"
+    },
+    success: function(response) {console.log(response)}
+})
+*/
 		$http({
-  			method: 'POST',
+  			
   			url: 'https://en.wikipedia.org/w/api.php',
-  			action: 'query',
-  			titles:'abcd',
 
-
-  			header:{
-  				'Api-User-Agent': 'Example/1.0',
-  			}
+  			dataType:'jsonp',
+    		data: { 
+        		action: "query", 
+        		indexpageids: "",
+        		generator: "allcategories",
+        		gacprefix: $scope.userInput,
+        		continue: "",
+         		format: "json" 
+    		},
 
 		}).then(function successCallback(response) {
     		// this callback will be called asynchronously
