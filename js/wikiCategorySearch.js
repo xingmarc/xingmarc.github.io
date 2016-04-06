@@ -52,10 +52,10 @@ $.ajax( {
 
     		console.log(response);
 
-    		var pageIds = response.query.pageIds;
+    		var pageIds = response.data.query.pageids;
 
     		pageIds.forEach(function(item){
-    			$scope.categories.push(response.query.pages.item);
+    			$scope.categories.push(response.data.query.pages.item);
     		})
 
 
