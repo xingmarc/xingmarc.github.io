@@ -17,14 +17,19 @@
 		// console.log(test);
 
 		$http({
-  			method: 'GET',
-  			url: 'https://en.wikipedia.org/w/api.php?action=query&indexpageids=&generator=allcategories&gacprefix=animals&continue='
+  			method: 'POST',
+  			url: 'https://en.wikipedia.org/w/api.php?action=query&indexpageids=&generator=allcategories&gacprefix=animals&continue=',
+
+
+  			header:{
+  				'Api-User-Agent': 'Example/1.0',
+  			}
 
 		}).then(function successCallback(response) {
     		// this callback will be called asynchronously
     		// when the response is available
 
-    		aaa="good";
+    		$scope.aaa="good";
 
     		console.log(response);
 
@@ -32,7 +37,7 @@
     		// called asynchronously if an error occurs
     		// or server returns response with an error status.
 
-    		aaa = "bad";
+    		$scope.aaa = "bad";
 
     		console.log(response);
   		});
