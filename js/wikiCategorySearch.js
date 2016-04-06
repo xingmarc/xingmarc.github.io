@@ -40,14 +40,16 @@ $.ajax( {
 
 
 		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
-  			
+  			params:{
+  				dataType: "jsonp"
+  			},
     		data: { 
         		action: "query", 
         		indexpageids: "",
         		generator: "allcategories",
         		gacprefix: $scope.userInput,
         		continue: "",
-        		//format:"json"
+        		format:"json"
     		},
     		//headers: { 'Api-User-Agent': 'xingmarc.github.io' },
 
