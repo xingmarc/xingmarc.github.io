@@ -39,7 +39,7 @@ $.ajax( {
 
 
 
-		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
+		$http.jsonp('https://en.wikipedia.org/w/api.php',{
   			
     		params: { 
         		action: "query", 
