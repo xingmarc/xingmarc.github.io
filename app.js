@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('HahaX',['ui.router'])
+angular.module('HahaX',['ui.router','ngAnimate'])
 .config(function($stateProvider,$urlRouterProvider,$httpProvider) {
 
 	//$urlRouterProvider.otherwise("/");
