@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('HahaX',['ui.router','ngResource'])
+angular.module('HahaX',['ui.router'])
 .config(function($stateProvider,$urlRouterProvider) {
 
 	//$urlRouterProvider.otherwise("/");
