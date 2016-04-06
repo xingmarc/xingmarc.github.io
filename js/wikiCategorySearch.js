@@ -15,7 +15,7 @@
 		// var test = wikiAPI.get();
 
 		// console.log(test);
-/*
+
 $.ajax( {
     url: "https://en.wikipedia.org/w/api.php",
     dataType:'jsonp',
@@ -29,7 +29,26 @@ $.ajax( {
     },
     success: function(response) {console.log(response)}
 })
-*/
+
+/**************/
+
+
+jsonp("https://en.wikipedia.org/w/api.php", {
+	data: { 
+        action: "query", 
+        indexpageids:"",
+        generator:"allcategories",
+        gacprefix:"animals",
+        continue :"", 
+        format: "json"
+    }
+}).then(function(response){
+	console.log(response);
+})
+
+
+
+/*
 		$http.get({
   			
   			url: 'https://en.wikipedia.org/w/api.php',
@@ -62,6 +81,6 @@ $.ajax( {
   		});
 
 	}
-
+*/
 
 })();
