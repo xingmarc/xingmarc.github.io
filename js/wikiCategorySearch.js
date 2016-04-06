@@ -55,7 +55,10 @@ $.ajax( {
     		var pageIds = response.data.query.pageids;
     		console.log(pageIds);
     		pageIds.forEach(function(item){
-    			console.log(response.data.query.pages.Number(item));
+
+    			console.log(item);
+
+    			console.log(response.data.query.page[item]);
     			$scope.categories.push(response.data.query.pages.item);
     		})
 
