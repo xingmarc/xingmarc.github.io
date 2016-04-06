@@ -47,7 +47,7 @@ $.ajax( {
         		generator: "allcategories",
         		gacprefix: $scope.userInput,
         		continue: "",
-        		format:"json"
+        		//format:"json"
     		},
     		//headers: { 'Api-User-Agent': 'xingmarc.github.io' },
 
