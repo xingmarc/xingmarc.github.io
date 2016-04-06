@@ -39,7 +39,7 @@ $.ajax( {
 
 
 
-		$http.get('https://en.wikipedia.org/w/api.php',{
+		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
   			
     		data: { 
         		action: "query", 
@@ -47,8 +47,9 @@ $.ajax( {
         		generator: "allcategories",
         		gacprefix: $scope.userInput,
         		continue: "",
+        		format:"json"
     		},
-    		headers: { 'Api-User-Agent': 'xingmarc.github.io' },
+    		//headers: { 'Api-User-Agent': 'xingmarc.github.io' },
 
 		}).then(function successCallback(response) {
     		// this callback will be called asynchronously
