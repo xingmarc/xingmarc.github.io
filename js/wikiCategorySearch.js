@@ -12,9 +12,7 @@
 		$scope.userInput = "animal";
 
 
-		// var test = wikiAPI.get();
 
-		// console.log(test);
 /*
 $.ajax( {
     url: "https://en.wikipedia.org/w/api.php",
@@ -31,22 +29,15 @@ $.ajax( {
 })
 */
 
-/**************/
-
-//$http.jsonp("https://en.wikipedia.org/w/api.php?action=query&format=json&indexpageids=&generator=allcategories&gacprefix=animals&continue=", {
-//}).then(function(response){console.log(response);})
-
-
-
-
 		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
   			
     		params: { 
         		action: "query", 
         		indexpageids: "",
         		generator: "allcategories",
-        		gacprefix: $scope.userInput,
+        		gacprefix: "animals",
         		continue: "",
+        		gaccontinue:"",
         		format:"json"
     		},
     		//headers: { 'Api-User-Agent': 'xingmarc.github.io' },
@@ -71,7 +62,6 @@ $.ajax( {
 
 
 
+
 	}
-
-
 })();
