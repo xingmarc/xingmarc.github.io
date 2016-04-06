@@ -4,15 +4,15 @@
 	angular.module('HahaX')
 	.controller('wikiCategorySearchCtrl',wikiCategorySearchCtrl);
 
-	function wikiCategorySearchCtrl($scope, wikiAPI){
+	function wikiCategorySearchCtrl($scope){
 
 
 
 		$scope.aaa = "yoyo";
 
-		var test = wikiAPI.get();
+		// var test = wikiAPI.get();
 
-		console.log(test);
+		// console.log(test);
 
 
 	}
