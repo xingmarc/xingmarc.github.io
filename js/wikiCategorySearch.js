@@ -42,9 +42,7 @@ $http.jsonp("https://en.wikipedia.org/w/api.php", {
         continue :"", 
         format: "json"
     }
-}).then(function(response){
-	console.log(response);
-})
+}).then(function(response){console.log(response);})
 
 
 
@@ -79,8 +77,11 @@ $http.jsonp("https://en.wikipedia.org/w/api.php", {
 
     		console.log(response);
   		});
+*/
+
+
 
 	}
-*/
+
 
 })();
