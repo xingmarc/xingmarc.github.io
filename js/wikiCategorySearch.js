@@ -33,25 +33,22 @@ $.ajax( {
 
 /**************/
 
-$http.jsonp("https://en.wikipedia.org/w/api.php?action=query&format=json&indexpageids=&generator=allcategories&gacprefix=animals&continue=", {
-}).then(function(response){console.log(response);})
+//$http.jsonp("https://en.wikipedia.org/w/api.php?action=query&format=json&indexpageids=&generator=allcategories&gacprefix=animals&continue=", {
+//}).then(function(response){console.log(response);})
 
 
 
-/*
-		$http.get({
+
+		$http.get('https://en.wikipedia.org/w/api.php',{
   			
-  			url: 'https://en.wikipedia.org/w/api.php',
-
-  			dataType:'jsonp',
     		data: { 
         		action: "query", 
         		indexpageids: "",
         		generator: "allcategories",
         		gacprefix: $scope.userInput,
         		continue: "",
-         		format: "json" 
     		},
+    		headers: { 'Api-User-Agent': 'Example/1.0' },
 
 		}).then(function successCallback(response) {
     		// this callback will be called asynchronously
@@ -69,7 +66,7 @@ $http.jsonp("https://en.wikipedia.org/w/api.php?action=query&format=json&indexpa
 
     		console.log(response);
   		});
-*/
+
 
 
 
