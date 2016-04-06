@@ -33,7 +33,7 @@ $.ajax( {
 
 /**************/
 
-$http.jsonp("https://en.wikipedia.org/w/api.php?action=query&indexpageids=&generator=allcategories&gacprefix=animals&continue=", {
+$http.jsonp("https://en.wikipedia.org/w/api.php?action=query&format=json&indexpageids=&generator=allcategories&gacprefix=animals&continue=", {
 }).then(function(response){console.log(response);})
 
 
