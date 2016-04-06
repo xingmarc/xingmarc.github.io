@@ -15,7 +15,7 @@
 		// var test = wikiAPI.get();
 
 		// console.log(test);
-
+/*
 $.ajax( {
     url: "https://en.wikipedia.org/w/api.php",
     dataType:'jsonp',
@@ -29,6 +29,7 @@ $.ajax( {
     },
     success: function(response) {console.log(response)}
 })
+*/
 
 /**************/
 
