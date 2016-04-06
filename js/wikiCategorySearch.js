@@ -4,7 +4,7 @@
 	angular.module('HahaX')
 	.controller('wikiCategorySearchCtrl',wikiCategorySearchCtrl);
 
-	function wikiCategorySearchCtrl($scope, $http, WIKI_API_URL){
+	function wikiCategorySearchCtrl($scope, $http){
 
 
 
@@ -18,7 +18,8 @@
 
 		$http({
   			method: 'GET',
-  			url: WIKI_API_URL
+  			url: 'https://en.wikipedia.org/w/api.php?action=query&indexpageids=&generator=allcategories&gacprefix=animals&continue='
+
 		}).then(function successCallback(response) {
     		// this callback will be called asynchronously
     		// when the response is available
