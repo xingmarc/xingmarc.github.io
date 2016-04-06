@@ -58,7 +58,7 @@ $.ajax( {
 
     			console.log(item);
 
-    			console.log(response.data.query.page[item]);
+    			console.log(response.data.query.pages[item]);
     			$scope.categories.push(response.data.query.pages.item);
     		})
 
