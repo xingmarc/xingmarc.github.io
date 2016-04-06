@@ -4,20 +4,44 @@
 	<h1>Wiki Category Search</h1>
     <!-- <h1>Excited!</h1> -->
 
-    <form class="form-group" ng-submit="submit()">
-      <p>
-        Type the keywords:
-      </p>
+    <div class="row">
+    	<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+    		<form class="form-group" ng-submit="submit()">
+      			<p>
+        			Type the keywords:
+      			</p>
 
-        <input class="form-control" 
-        type="text"
-        ng-model="userInput" 
-        placeholder="Search for category starts with:">
+        		<input class="form-control" 
+        				type="text"
+        				ng-model="userInput" 
+        				placeholder="Search for category starts with:">
     
-        <!-- <button class="btn btn-primary" ng-click="submit()">提交</button>  -->
-    
-    </form>
+        			<!-- <button class="btn btn-primary" ng-click="submit()">提交</button>  -->
+    		</form>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+
+    		<table ng-show="categories.length!=0" class="table table-striped">
+    			<thead>
+      				<tr>
+        				<th>Firstname</th>
+      				</tr>
+    			</thead>
+    			<tbody>
+    				<tr ng-repeat="ctgry in categories">
+    					<td>{{ctgry.title}}</td>
+    				</tr>
 
 
-    
+    			</tbody>
+    		
+			</table>
+
+
+    	</div>
+    </div>
+
+
 </div>

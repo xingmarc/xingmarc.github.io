@@ -28,6 +28,8 @@ $.ajax( {
     success: function(response) {console.log(response)}
 })
 */
+		$scope.categories = [];
+
 
 		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
   			
@@ -49,6 +51,15 @@ $.ajax( {
     		$scope.aaa="good";
 
     		console.log(response);
+
+    		var pageIds = response.query.pageIds;
+
+    		pageIds.forEach(function(item){
+    			$scope.categories.push(response.query.pages.item);
+    		})
+
+
+
 
   		}, function errorCallback(response) {
     		// called asynchronously if an error occurs
