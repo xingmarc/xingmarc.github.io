@@ -40,10 +40,8 @@ $.ajax( {
 
 
 		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
-  			params:{
-  				dataType: "jsonp"
-  			},
-    		data: { 
+  			
+    		params: { 
         		action: "query", 
         		indexpageids: "",
         		generator: "allcategories",
