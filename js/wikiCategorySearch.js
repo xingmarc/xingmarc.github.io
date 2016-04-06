@@ -33,8 +33,7 @@ $.ajax( {
 
 /**************/
 
-
-jsonp("https://en.wikipedia.org/w/api.php", {
+$http.jsonp("https://en.wikipedia.org/w/api.php", {
 	data: { 
         action: "query", 
         indexpageids:"",
