@@ -18,7 +18,9 @@
 
 		$http({
   			method: 'POST',
-  			url: 'https://en.wikipedia.org/w/api.php?action=query&indexpageids=&generator=allcategories&gacprefix=animals&continue=',
+  			url: 'https://en.wikipedia.org/w/api.php',
+  			action: 'query',
+  			titles:'abcd',
 
 
   			header:{
