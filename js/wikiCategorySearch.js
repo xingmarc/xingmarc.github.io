@@ -30,6 +30,7 @@ $.ajax( {
 */
 		$scope.categories = [];
 
+		$scope.queryDone = false;
 
 		$http.jsonp('https://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK',{
   			
@@ -63,7 +64,7 @@ $.ajax( {
     		})
 
 
-
+    		$scope.queryDone = true;
 
   		}, function errorCallback(response) {
     		// called asynchronously if an error occurs
