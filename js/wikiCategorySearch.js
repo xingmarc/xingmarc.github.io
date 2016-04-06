@@ -30,7 +30,7 @@ $.ajax( {
     success: function(response) {console.log(response)}
 })
 */
-		$http({
+		$http.get({
   			
   			url: 'https://en.wikipedia.org/w/api.php',
 
