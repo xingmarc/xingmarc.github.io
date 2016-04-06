@@ -26,7 +26,7 @@ angular.module('HahaX',['ui.router'])
     			controller: 'homeCtrl'
 			}
 		}
-		
+
 	})
 	.state('root.haha', {
 	  	url: '/haha',
@@ -47,6 +47,15 @@ angular.module('HahaX',['ui.router'])
 			}
 		}
 		
+	})
+	.state('root.wikiCategorySearch',{
+		url:'/wikiCategorySearch',
+		views: {
+			'container@':{
+				templateUrl: 'views/wikiCategorySearch.html',
+				controller: 'wikiCategorySearchCtrl'
+			}
+		}
 	})
 
 });
